@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Simple, responsive company website template." />
+  <title>YourBrand — Simple Responsive Website</title>
+
+  <!-- Open Graph (social preview) -->
+  <meta property="og:title" content="YourBrand — Simple Responsive Website">
+  <meta property="og:description" content="A lightweight, mobile-first company site with Home, About, Products, Services & Contact.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="#">
+  <meta property="og:image" content="assets/img/logo.svg">
+
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!--
+    ✨ How to customize
+    1) Change colors & spacing in :root variables inside /assets/css/style.css
+    2) Replace the logo at /assets/img/logo.svg
+    3) Swap text below (About/Products/Services/Contact) with your real content
+    4) This is a single-page site. Links scroll to sections.
+  -->
+</head>
+<body>
+
+  <!-- ========== Header / Navigation ========== -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Go to Home">
+        <img src="assets/img/CNC.png" alt="YourBrand logo">
+        <span>CodeNinjas Cambridge</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <nav id="site-menu" class="site-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="btn btn-primary">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== Hero / Home ========== -->
+  <section id="home" class="section hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Your Partner for Modern <span class="accent-underline">IT Services</span></h1>
+        <p>
+          Reliable, scalable IT solutions built for modern business. Customize, integrate, and get up and running fast.
+        </p>
+        <div class="cta-row">
+          <a href="#products" class="btn btn-primary">Explore Products</a>
+          <a href="#contact" class="btn btn-outline">Contact Us</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <!-- Decorative graphic -->
+        <div class="blob"></div>
+	 <img src="assets/img/Main Page.jpg">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== About Us ========== -->
+  <section id="about" class="section">
+    <div class="container two-col">
+      <div class="media card">
+        <div class="img-placeholder" role="img" aria-label="Team working illustration"></div>
+	<img src="assets/img/AboutUs.jpg">
+      </div>
+      <div class="content">
+        <h2>About Us</h2>
+        <p>
+          NextGen Cambridge is an innovative technology industry focused, business driven professional services firm. From web design and Software development to custom applications, our talented people work intelligently to solve and manage client’s needs. We serve to deliver cost effective interactive technology and design solutions without compromising on quality.
+        </p>
+        <ul class="checklist">
+          <li>Deliver high-quality web designs and applications that reflect our expertise</li>
+          <li>Prioritize excellence in design, technology, and customer service</li>
+          <li>Focus on client satisfaction as the foundation of our growth</li>
+          <li>Provide 24/7 availability for advising, training, and ongoing assistance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Products ========== -->
+  <section id="products" class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Products</h2>
+        <p>Showcase your best‑selling items or featured categories.</p>
+      </div>
+
+      <div class="grid cards-3">
+        <!-- Card 1 -->
+        <article class="card product-card">
+          <div class="img-placeholder tall" role="img" aria-label="Product image placeholder"></div>
+          <div class="card-body">
+            <h3>Product One</h3>
+            <p>Short, compelling summary of what this product does.</p>
+            <div class="meta-row">
+              
+              <a href="#contact" class="btn btn-sm">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card product-card">
+          <div class="img-placeholder tall" role="img" aria-label="Product image placeholder"></div>
+          <div class="card-body">
+            <h3>Product Two</h3>
+            <p>Highlight benefits and the problems it solves.</p>
+            <div class="meta-row">
+              
+              <a href="#contact" class="btn btn-sm">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card product-card">
+          <div class="img-placeholder tall" role="img" aria-label="Product image placeholder"></div>
+          <div class="card-body">
+            <h3>Product Three</h3>
+            <p>Add a key feature or two to drive interest.</p>
+            <div class="meta-row">
+              
+              <a href="#contact" class="btn btn-sm">Enquire</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Services ========== -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Services</h2>
+        <p>What we can do for your business.</p>
+      </div>
+
+      <div class="grid cards-4">
+        <article class="card service-card">
+          <div class="icon" aria-hidden="true">⚙️</div>
+          <h3>Custom Development</h3>
+          <p>Tailored web apps & integrations to fit your workflow.</p>
+        </article>
+        <article class="card service-card">
+          <div class="icon" aria-hidden="true">🛒</div>
+          <h3>E‑Commerce Setup</h3>
+          <p>Storefronts, payments, invoicing & logistics made simple.</p>
+        </article>
+        <article class="card service-card">
+          <div class="icon" aria-hidden="true">📈</div>
+          <h3>Analytics & Growth</h3>
+          <p>Actionable dashboards to measure and scale results.</p>
+        </article>
+        <article class="card service-card">
+          <div class="icon" aria-hidden="true">🔒</div>
+          <h3>Security & Compliance</h3>
+          <p>Best practices for data protection and regulations.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Contact ========== -->
+  <section id="contact" class="section alt">
+    <div class="container two-col">
+      <div class="content">
+        <h2>Contact Us</h2>
+        <p>Have a question or want a demo? Send us a message.</p>
+
+        <!-- Static form (use Formspree / backend to process in production) -->
+        <form class="contact-form" name="contact" method="post" action="mailto:info@example.com">
+          <div class="grid form-grid">
+            <label class="field">
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your full name" required>
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+            <label class="field">
+              <span>Phone</span>
+              <input type="tel" name="phone" placeholder="+44 7918 296644">
+            </label>
+            <label class="field full">
+              <span>Message</span>
+              <textarea name="message" rows="4" placeholder="Tell us what you need…" required></textarea>
+            </label>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-meta">
+          <p><strong>Email:</strong> cambridgecamuk@codeninjas.com</p>
+          <p><strong>Phone:</strong> +44 7918 296644, 07551755602</p>
+          <p><strong>Address:</strong> Chesterton Community College, Gilbert Rd, Cambridgeshire CB4 3NY</p>
+        </div>
+      </div>
+
+      <div class="media card">
+        <div class="map-placeholder" role="img" aria-label="Map placeholder"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="brand-col">
+        <a class="brand sm" href="#home">
+          <img src="assets/img/CNC.png" alt="YourBrand logo small">
+          <span>CodeNinjas Cambridge</span>
+        </a>
+        <p class="muted">© <span id="year"></span> CodeNinjas Cambridge. All rights reserved.</p>
+      </div>
+      <div class="link-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="link-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#" aria-disabled="true">Privacy Policy</a></li>
+          <li><a href="#" aria-disabled="true">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
