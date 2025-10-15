@@ -33,13 +33,13 @@ body{
 }
 
 /* Utilities */
-.container{width:var(--container); margin-inline:auto; padding-inline: .5rem}
-.section{padding: 72px 0}
+.container{width:var(--container); margin-inline:auto; padding-inline: .5rem; padding-bottom: 2rem;}
+.section{padding: 60px 0 20px 0}
 .section.alt{background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.00));}
 .section-head{margin-bottom: 24px}
 .section-head h2{font-size:var(--h2); margin:.1rem 0 .25rem}
 .section-head p{color:var(--muted); margin:0}
-.grid{display:grid; gap:16px}
+.grid{display:grid; gap:16px; margin-bottom: .100rem}
 .cards-3{grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))}
 .cards-4{grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))}
 .two-col{display:grid; gap:24px; grid-template-columns: 1fr; align-items:center}
@@ -80,13 +80,13 @@ body{
 #site-menu.open ul{flex-direction:column; padding:10px}
 
 /* Hero */
-.hero{padding: 80px 0 40px}
+.hero{padding: 75px 0 40px}
 .hero-grid{display:grid; gap:24px; grid-template-columns: 1fr}
 .hero-copy h1{font-size:var(--h1); line-height:1.15; margin:0 0 12px}
 .hero-copy p{color:var(--muted); margin:0 0 16px}
 .accent-underline{background:linear-gradient( to top, var(--accent) 0 45%, transparent 45% 100% ); padding:0 .2rem}
 .cta-row{display:flex; gap:10px; flex-wrap:wrap}
-.hero-art{min-height:220px; position:relative}
+.hero-art{min-height:220px; position:relative; background-image: url("https://39646145.fs1.hubspotusercontent-na1.net/hubfs/39646145/bg-desktop@3x.webp") }
 .hero-art .blob{
   position:absolute; inset:0;
   background:
@@ -105,6 +105,7 @@ body{
   overflow:hidden;
 }
 .card-body{padding:14px 14px 16px}
+img{width: 100%; height:auto;display: block}
 .img-placeholder{
   height:180px; background:
     linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
